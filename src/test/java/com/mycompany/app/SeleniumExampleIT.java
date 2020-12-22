@@ -18,6 +18,7 @@ public class SeleniumExampleIT
     @Test
     public void googleCheeseExample() throws Exception {
 
+        System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/src/test/resources/selenium_standalone_binaries/chromedriver.sh");
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
