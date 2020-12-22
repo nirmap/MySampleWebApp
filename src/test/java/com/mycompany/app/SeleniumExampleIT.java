@@ -11,15 +11,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class SeleniumExampleIT
 {   
-   WebDriver driver = new ChromeDriver();
-    //testng
-
+    WebDriverManager.chromedriver().setup();
+		 driver = new ChromeDriver();
+	
     @Test
     public void googleCheeseExample() throws Exception {
        
        
-       WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
+      
        
         // And now use this to visit Google
         driver.get("http://www.google.com");
