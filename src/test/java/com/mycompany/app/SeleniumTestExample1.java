@@ -33,8 +33,7 @@ public class SeleniumTestExample1 extends DriverBase
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
 
-        googleHomePage.enterSearchTerm("Cheese")
-                .submitSearch();
+        googleHomePage.enterSearchTerm("Cheese").submitSearch();
 
         // Google's search is rendered dynamically with JavaScript.
         // Wait for the page to load, timeout after 10 seconds
