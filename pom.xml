@@ -103,6 +103,9 @@
             <includes>
                 <include>**/*WD.java</include>
             </includes>
+            <suiteXmlFiles>
+              <suiteXmlFile>testng.xml</suiteXmlFile>
+            </suiteXmlFiles>
         </configuration>
         <executions>
             <execution>
