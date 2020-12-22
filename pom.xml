@@ -57,14 +57,11 @@
         <artifactId>driver-binary-downloader-maven-plugin</artifactId>
         <version>1.0.18</version>
         <configuration>
-            <rootStandaloneServerDirectory>${project.basedir}
-            /src/test/resources/selenium_standalone_binaries
+            <rootStandaloneServerDirectory>${project.basedir}/src/test/resources/selenium_standalone_binaries
             </rootStandaloneServerDirectory>
-            <downloadedZipFileDirectory>${project.basedir}
-            /src/test/resources/selenium_standalone_zips
+            <downloadedZipFileDirectory>${project.basedir}/src/test/resources/selenium_standalone_zips
             </downloadedZipFileDirectory>
-            <customRepositoryMap>${project.basedir}
-            /src/test/resources/RepositoryMap.xml
+            <customRepositoryMap>${project.basedir}/src/test/resources/RepositoryMap.xml
             </customRepositoryMap>
             <overwriteFilesThatExist>${
             overwrite.binaries}</overwriteFilesThatExist>
