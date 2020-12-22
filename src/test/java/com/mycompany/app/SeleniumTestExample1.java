@@ -31,7 +31,7 @@ public class SeleniumTestExample1 extends DriverBase
         GoogleHomePage googleHomePage = new GoogleHomePage();
 
         // Check the title of the page
-        LOG.info("Page title is: " + driver.getTitle());
+        System.out.println("Page title is: " + driver.getTitle());
 
         googleHomePage.enterSearchTerm("Cheese")
                 .submitSearch();
@@ -42,7 +42,7 @@ public class SeleniumTestExample1 extends DriverBase
         wait.until(pageTitleStartsWith("Cheese"));
 
         // Should see: "cheese! - Google Search"
-        LOG.info("Page title is: " + driver.getTitle());
+        System.out.println("Page title is: " + driver.getTitle());
     }
 
 
