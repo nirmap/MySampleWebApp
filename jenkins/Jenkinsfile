@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -Dwebdriver.chrome.driver=/var/lib/jenkins/src/test/resources/selenium_standalone_binaries/bin'
+                sh 'mvn test -Dwebdriver.chrome.driver=/var/lib/jenkins/workspace/ySampleWebApp_bitwiseman-patch-1/src/test/resources/selenium_standalone_binaries/bin'
             }
             post {
                 success {
