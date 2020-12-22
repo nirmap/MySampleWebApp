@@ -12,7 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class SeleniumExampleIT
 {   
     WebDriverManager.chromedriver().setup();
-		 driver = new ChromeDriver();
+    driver = new ChromeDriver();
 	
     @Test
     public void googleCheeseExample() throws Exception {
