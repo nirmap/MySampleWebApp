@@ -4,6 +4,7 @@ package com.mycompany.app;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * Selenium test for simple App.
@@ -16,7 +17,7 @@ public class SeleniumExampleIT
     @Test
     public void googleCheeseExample() throws Exception {
        
-       ChromeDriverManager.getInstance().setup();
+       WebDriverManager.getInstance().setup();
        
         // And now use this to visit Google
         driver.get("http://www.google.com");
