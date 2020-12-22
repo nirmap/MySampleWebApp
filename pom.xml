@@ -105,6 +105,8 @@
             </includes>
             <suiteXmlFiles>
               <suiteXmlFile>testng.xml</suiteXmlFile>
+              <suiteXmlFile>TestAppMain.xml</suiteXmlFile>
+              <suiteXmlFile>TestAppConstructor.xml</suiteXmlFile>
             </suiteXmlFiles>
         </configuration>
         <executions>
