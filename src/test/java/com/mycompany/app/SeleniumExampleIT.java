@@ -16,6 +16,8 @@ public class SeleniumExampleIT
     @Test
     public void googleCheeseExample() throws Exception {
        
+       ChromeDriverManager.getInstance().setup();
+       
         // And now use this to visit Google
         driver.get("http://www.google.com");
         // Alternatively the same thing can be done like this
