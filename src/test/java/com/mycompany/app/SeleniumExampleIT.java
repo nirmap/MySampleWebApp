@@ -20,7 +20,7 @@ public class SeleniumExampleIT
 
 
         WebDriverManager.chromedriver().setup();
-        private WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
