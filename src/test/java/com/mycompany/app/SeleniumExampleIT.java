@@ -12,6 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class SeleniumExampleIT
 {
     //spec char
+    
     WebDriverManager.chromedriver().setup();
     private WebDriver driver = new ChromeDriver();
 
