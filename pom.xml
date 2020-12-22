@@ -55,7 +55,7 @@
       <plugin>
         <groupId>com.lazerycode.selenium</groupId>
         <artifactId>driver-binary-downloader-maven-plugin</artifactId>
-        <version>1.0.7</version>
+        <version>1.0.18</version>
         <configuration>
             <rootStandaloneServerDirectory>${project.basedir}
             /src/test/resources/selenium_standalone_binaries
