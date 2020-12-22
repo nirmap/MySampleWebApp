@@ -31,7 +31,12 @@
       <artifactId>driver-binary-downloader-maven-plugin</artifactId>
       <version>1.0.18</version>
       <scope>test</scope>
-    </dependency>    
+    </dependency>  
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>4.2.2</version>
+    </dependency>
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
