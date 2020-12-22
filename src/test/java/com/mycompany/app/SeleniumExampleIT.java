@@ -13,14 +13,14 @@ public class SeleniumExampleIT
 {
     //spec char
     
-    WebDriverManager.chromedriver().setup();
-    private WebDriver driver = new ChromeDriver();
+   
 
     @Test
     public void googleCheeseExample() throws Exception {
 
 
-
+        WebDriverManager.chromedriver().setup();
+        private WebDriver driver = new ChromeDriver();
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
