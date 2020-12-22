@@ -1,0 +1,17 @@
+package com.mycompany.app;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+/**
+ * Selenium test for simple App.
+ */
+public class SeleniumTestExample1
+{   
+
+    WebDriver driver = new ChromeDriver();
+    driver.get("https://selenium.dev");
+    System.out.println("Title"+driver.getTitle());
+    driver.quit();
+
+}
