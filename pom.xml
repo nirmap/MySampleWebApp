@@ -104,9 +104,9 @@
                 <include>**/*WD.java</include>
             </includes>
             <suiteXmlFiles>
-              <suiteXmlFile>/MySampleWebApp/src/test/java/com/mycompany/app/testng.xml</suiteXmlFile>
-              <suiteXmlFile>/MySampleWebApp/src/test/java/com/mycompany/app/TestAppMain.xml</suiteXmlFile>
-              <suiteXmlFile>/MySampleWebApp/src/test/java/com/mycompany/app/TestAppConstructor.xml</suiteXmlFile>
+              <suiteXmlFile>${project.basedir}/src/test/java/com/mycompany/app/testng.xml</suiteXmlFile>
+              <suiteXmlFile>${project.basedir}/src/test/java/com/mycompany/app/TestAppMain.xml</suiteXmlFile>
+              <suiteXmlFile>${project.basedir}/src/test/java/com/mycompany/app/TestAppConstructor.xml</suiteXmlFile>
             </suiteXmlFiles>
         </configuration>
         <executions>
@@ -136,9 +136,9 @@
                 <include>**/*WD.java</include>
             </includes>
             <suiteXmlFiles>
-              <suiteXmlFile>/MySampleWebApp/src/test/java/com/mycompany/app/testng.xml</suiteXmlFile>
-              <suiteXmlFile>/MySampleWebApp/src/test/java/com/mycompany/app/TestAppMain.xml</suiteXmlFile>
-              <suiteXmlFile>/MySampleWebApp/src/test/java/com/mycompany/app/TestAppConstructor.xml</suiteXmlFile>
+              <suiteXmlFile>${project.basedir}/src/test/java/com/mycompany/app/testng.xml</suiteXmlFile>
+              <suiteXmlFile>${project.basedir}/src/test/java/com/mycompany/app/TestAppMain.xml</suiteXmlFile>
+              <suiteXmlFile>${project.basedir}/src/test/java/com/mycompany/app/TestAppConstructor.xml</suiteXmlFile>
             </suiteXmlFiles>
         </configuration>              
       </plugin>
