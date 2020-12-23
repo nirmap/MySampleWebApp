@@ -22,10 +22,7 @@ public class SeleniumExampleIT
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        // Must maximize Chrome by `start-maximized`
-        options.addArguments("start-maximized");
+        
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
