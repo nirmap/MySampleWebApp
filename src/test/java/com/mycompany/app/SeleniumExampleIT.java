@@ -19,7 +19,10 @@ public class SeleniumExampleIT
     public void googleCheeseExample() throws Exception {
 
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/ySampleWebApp_bitwiseman-patch-1/src/test/resources/webdriver/binaries/linux/googlechrome/64bit/chromedriver");
-
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("headless");
+        // Must maximize Chrome by `start-maximized`
+        options.addArguments("start-maximized");
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         
