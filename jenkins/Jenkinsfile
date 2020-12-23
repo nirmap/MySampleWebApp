@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh '''
-                    ssh -t -t user@host 'bash -s << 'ENDSSH'
+                    ssh -t -t ec2-user@13.235.83.140 'bash -s << 'ENDSSH'
                     sudo export DISPLAY=:0 
                     sudo Xvfb :0 -ac -screen 0 1024x768x24 &
                     sh 'mvn test -Dwebdriver.chrome.driver=/var/lib/jenkins/workspace/ySampleWebApp_bitwiseman-patch-1/src/test/resources/webdriver/binaries/linux/googlechrome/64bit/chromedriver'
