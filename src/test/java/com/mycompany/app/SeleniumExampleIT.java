@@ -39,6 +39,7 @@ public class SeleniumExampleIT
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
         
+        driver.close();
        
 
 
