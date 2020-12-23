@@ -31,7 +31,7 @@ public class SeleniumExampleIT
         
 
         // And now use this to visit Google
-      //  driver.get("http://www.google.com");
+      driver.get("http://www.google.com");
 
 
 
@@ -39,7 +39,7 @@ public class SeleniumExampleIT
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
         
-        driver.close();
+        //driver.close();
        
 
 
