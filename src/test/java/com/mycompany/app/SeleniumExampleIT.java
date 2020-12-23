@@ -21,10 +21,13 @@ public class SeleniumExampleIT
         System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/workspace/ySampleWebApp_bitwiseman-patch-1/src/test/resources/webdriver/binaries/linux/googlechrome/64bit/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
+        options.addArguments("no-sandbox");
         // Must maximize Chrome by `start-maximized`
         options.addArguments("start-maximized");
+        options.addArguments("disable-gpu");
+        options.addArguments("window-size=1420,1080");
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
         
 
         // And now use this to visit Google
